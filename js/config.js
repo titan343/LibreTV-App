@@ -105,6 +105,19 @@ const API_SITES = {
         api: 'https://ikunzyapi.com',
         name: 'iKun资源'
     },
+    ttdm: {
+        api: 'https://www.ttdm3.me/api.php/provide/vod',
+        name: '天天'
+    },
+     kimivod: {
+        api: 'https://kimivod.com/api.php/provide/vod',
+        name: 'kimi'
+    },      
+     ckzy: {
+        api: 'https://www.ckzy1.com',
+        name: 'CK资源',
+        adult: true
+    },
     testSource: {
         api: 'https://www.example.com',
         name: '空内容测试源',
@@ -176,7 +189,7 @@ const API_CONFIG = {
         // 修改搜索接口支持分页参数
         path: '/api.php/provide/vod/?ac=videolist&wd=',
         pagePath: '/api.php/provide/vod/?ac=videolist&wd={query}&pg={page}',
-        maxPages: 50, // 最大获取页数
+        maxPages: 60, // 最大获取页数
         headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
